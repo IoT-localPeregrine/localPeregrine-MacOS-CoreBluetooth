@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		053105842A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		053105922A20DD1F000BCD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058B2A20DD1F000BCD6F /* Constants.swift */; };
+		053105932A20DD1F000BCD6F /* L2CapPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */; };
+		053105942A20DD1F000BCD6F /* OutputStream+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */; };
+		053105952A20DD1F000BCD6F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058E2A20DD1F000BCD6F /* Extensions.swift */; };
+		053105962A20DD1F000BCD6F /* L2CapConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */; };
+		053105972A20DD1F000BCD6F /* L2CapCentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105902A20DD1F000BCD6F /* L2CapCentral.swift */; };
+		053105982A20DD1F000BCD6F /* L2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105912A20DD1F000BCD6F /* L2Types.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalPeregrineCoreBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalPeregrineCoreBluetooth.h; sourceTree = "<group>"; };
+		0531058B2A20DD1F000BCD6F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapPeripheral.swift; sourceTree = "<group>"; };
+		0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OutputStream+Data.swift"; sourceTree = "<group>"; };
+		0531058E2A20DD1F000BCD6F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapConnection.swift; sourceTree = "<group>"; };
+		053105902A20DD1F000BCD6F /* L2CapCentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapCentral.swift; sourceTree = "<group>"; };
+		053105912A20DD1F000BCD6F /* L2Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2Types.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0531057D2A20DCC1000BCD6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053105762A20DCC1000BCD6F = {
+			isa = PBXGroup;
+			children = (
+				0531058A2A20DCFF000BCD6F /* L2Cap */,
+				053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
+				053105812A20DCC1000BCD6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		053105812A20DCC1000BCD6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */,
+			);
+			path = LocalPeregrineCoreBluetooth;
+			sourceTree = "<group>";
+		};
+		0531058A2A20DCFF000BCD6F /* L2Cap */ = {
+			isa = PBXGroup;
+			children = (
+				0531058B2A20DD1F000BCD6F /* Constants.swift */,
+				0531058E2A20DD1F000BCD6F /* Extensions.swift */,
+				053105902A20DD1F000BCD6F /* L2CapCentral.swift */,
+				0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */,
+				0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */,
+				053105912A20DD1F000BCD6F /* L2Types.swift */,
+				0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */,
+			);
+			path = L2Cap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0531057B2A20DCC1000BCD6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053105842A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0531057F2A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 053105872A20DCC1000BCD6F /* Build configuration list for PBXNativeTarget "LocalPeregrineCoreBluetooth" */;
+			buildPhases = (
+				0531057B2A20DCC1000BCD6F /* Headers */,
+				0531057C2A20DCC1000BCD6F /* Sources */,
+				0531057D2A20DCC1000BCD6F /* Frameworks */,
+				0531057E2A20DCC1000BCD6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalPeregrineCoreBluetooth;
+			productName = LocalPeregrineCoreBluetooth;
+			productReference = 053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		053105772A20DCC1000BCD6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0531057F2A20DCC1000BCD6F = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 0531057A2A20DCC1000BCD6F /* Build configuration list for PBXProject "LocalPeregrineCoreBluetooth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 053105762A20DCC1000BCD6F;
+			productRefGroup = 053105812A20DCC1000BCD6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0531057F2A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0531057E2A20DCC1000BCD6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0531057C2A20DCC1000BCD6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053105962A20DD1F000BCD6F /* L2CapConnection.swift in Sources */,
+				053105942A20DD1F000BCD6F /* OutputStream+Data.swift in Sources */,
+				053105982A20DD1F000BCD6F /* L2Types.swift in Sources */,
+				053105932A20DD1F000BCD6F /* L2CapPeripheral.swift in Sources */,
+				053105922A20DD1F000BCD6F /* Constants.swift in Sources */,
+				053105972A20DD1F000BCD6F /* L2CapCentral.swift in Sources */,
+				053105952A20DD1F000BCD6F /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		053105852A20DCC1000BCD6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		053105862A20DCC1000BCD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		053105882A20DCC1000BCD6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fost.LocalPeregrineCoreBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		053105892A20DCC1000BCD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fost.LocalPeregrineCoreBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0531057A2A20DCC1000BCD6F /* Build configuration list for PBXProject "LocalPeregrineCoreBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				053105852A20DCC1000BCD6F /* Debug */,
+				053105862A20DCC1000BCD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		053105872A20DCC1000BCD6F /* Build configuration list for PBXNativeTarget "LocalPeregrineCoreBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				053105882A20DCC1000BCD6F /* Debug */,
+				053105892A20DCC1000BCD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 053105772A20DCC1000BCD6F /* Project object */;
+}
