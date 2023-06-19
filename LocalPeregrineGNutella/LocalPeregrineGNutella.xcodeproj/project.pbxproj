@@ -49,8 +49,6 @@
 		053105992A20DDCC000BCD6F = {
 			isa = PBXGroup;
 			children = (
-				053105B22A20DE14000BCD6F /* Central */,
-				053105B52A20DE14000BCD6F /* Peripheral */,
 				053105B32A20DE14000BCD6F /* ProtocolMessages */,
 				053105A52A20DDCC000BCD6F /* LocalPeregrineGNutella */,
 				053105A42A20DDCC000BCD6F /* Products */,
@@ -82,26 +80,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		053105B22A20DE14000BCD6F /* Central */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Central;
-			sourceTree = "<group>";
-		};
 		053105B32A20DE14000BCD6F /* ProtocolMessages */ = {
 			isa = PBXGroup;
 			children = (
 				053105B42A20DE14000BCD6F /* MessageType.swift */,
 			);
 			path = ProtocolMessages;
-			sourceTree = "<group>";
-		};
-		053105B52A20DE14000BCD6F /* Peripheral */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Peripheral;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

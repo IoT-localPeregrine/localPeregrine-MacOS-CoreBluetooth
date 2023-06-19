@@ -9,24 +9,36 @@
 /* Begin PBXBuildFile section */
 		053105842A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053105922A20DD1F000BCD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058B2A20DD1F000BCD6F /* Constants.swift */; };
-		053105932A20DD1F000BCD6F /* L2CapPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */; };
+		053105932A20DD1F000BCD6F /* L2CapPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */; };
 		053105942A20DD1F000BCD6F /* OutputStream+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */; };
 		053105952A20DD1F000BCD6F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058E2A20DD1F000BCD6F /* Extensions.swift */; };
 		053105962A20DD1F000BCD6F /* L2CapConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */; };
-		053105972A20DD1F000BCD6F /* L2CapCentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105902A20DD1F000BCD6F /* L2CapCentral.swift */; };
+		053105972A20DD1F000BCD6F /* L2CapCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105902A20DD1F000BCD6F /* L2CapCentralManager.swift */; };
 		053105982A20DD1F000BCD6F /* L2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105912A20DD1F000BCD6F /* L2Types.swift */; };
+		053105B92A20EB6C000BCD6F /* GNutellaBluetoothHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105B82A20EB6C000BCD6F /* GNutellaBluetoothHost.swift */; };
+		057BA3862A3F88CF00C4E335 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3852A3F88CF00C4E335 /* Message.swift */; };
+		057BA3882A3F88F600C4E335 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3872A3F88F600C4E335 /* MessageType.swift */; };
+		057BA38B2A402CF800C4E335 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38A2A402CF800C4E335 /* Queue.swift */; };
+		057BA38D2A4087B300C4E335 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38C2A4087B300C4E335 /* Address.swift */; };
+		057BA38F2A40AA9E00C4E335 /* MessagesInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalPeregrineCoreBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalPeregrineCoreBluetooth.h; sourceTree = "<group>"; };
 		0531058B2A20DD1F000BCD6F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapPeripheral.swift; sourceTree = "<group>"; };
+		0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapPeripheralManager.swift; sourceTree = "<group>"; };
 		0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OutputStream+Data.swift"; sourceTree = "<group>"; };
 		0531058E2A20DD1F000BCD6F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapConnection.swift; sourceTree = "<group>"; };
-		053105902A20DD1F000BCD6F /* L2CapCentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapCentral.swift; sourceTree = "<group>"; };
+		053105902A20DD1F000BCD6F /* L2CapCentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapCentralManager.swift; sourceTree = "<group>"; };
 		053105912A20DD1F000BCD6F /* L2Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2Types.swift; sourceTree = "<group>"; };
+		053105B82A20EB6C000BCD6F /* GNutellaBluetoothHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNutellaBluetoothHost.swift; sourceTree = "<group>"; };
+		057BA3852A3F88CF00C4E335 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		057BA3872A3F88F600C4E335 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		057BA38A2A402CF800C4E335 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		057BA38C2A4087B300C4E335 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesInterpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +55,8 @@
 		053105762A20DCC1000BCD6F = {
 			isa = PBXGroup;
 			children = (
-				0531058A2A20DCFF000BCD6F /* L2Cap */,
+				053105B72A20EB52000BCD6F /* GNutellaHost */,
+				0531058A2A20DCFF000BCD6F /* L2CapServices */,
 				053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
 				053105812A20DCC1000BCD6F /* Products */,
 			);
@@ -65,18 +78,47 @@
 			path = LocalPeregrineCoreBluetooth;
 			sourceTree = "<group>";
 		};
-		0531058A2A20DCFF000BCD6F /* L2Cap */ = {
+		0531058A2A20DCFF000BCD6F /* L2CapServices */ = {
 			isa = PBXGroup;
 			children = (
 				0531058B2A20DD1F000BCD6F /* Constants.swift */,
 				0531058E2A20DD1F000BCD6F /* Extensions.swift */,
-				053105902A20DD1F000BCD6F /* L2CapCentral.swift */,
+				053105902A20DD1F000BCD6F /* L2CapCentralManager.swift */,
 				0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */,
-				0531058C2A20DD1F000BCD6F /* L2CapPeripheral.swift */,
+				0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */,
 				053105912A20DD1F000BCD6F /* L2Types.swift */,
 				0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */,
 			);
-			path = L2Cap;
+			path = L2CapServices;
+			sourceTree = "<group>";
+		};
+		053105B72A20EB52000BCD6F /* GNutellaHost */ = {
+			isa = PBXGroup;
+			children = (
+				057BA3892A402CED00C4E335 /* utils */,
+				057BA3842A3F88A700C4E335 /* ProtocolMessages */,
+				053105B82A20EB6C000BCD6F /* GNutellaBluetoothHost.swift */,
+				057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */,
+			);
+			path = GNutellaHost;
+			sourceTree = "<group>";
+		};
+		057BA3842A3F88A700C4E335 /* ProtocolMessages */ = {
+			isa = PBXGroup;
+			children = (
+				057BA3852A3F88CF00C4E335 /* Message.swift */,
+				057BA3872A3F88F600C4E335 /* MessageType.swift */,
+				057BA38C2A4087B300C4E335 /* Address.swift */,
+			);
+			path = ProtocolMessages;
+			sourceTree = "<group>";
+		};
+		057BA3892A402CED00C4E335 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				057BA38A2A402CF800C4E335 /* Queue.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +204,16 @@
 				053105962A20DD1F000BCD6F /* L2CapConnection.swift in Sources */,
 				053105942A20DD1F000BCD6F /* OutputStream+Data.swift in Sources */,
 				053105982A20DD1F000BCD6F /* L2Types.swift in Sources */,
-				053105932A20DD1F000BCD6F /* L2CapPeripheral.swift in Sources */,
+				057BA38B2A402CF800C4E335 /* Queue.swift in Sources */,
+				057BA3862A3F88CF00C4E335 /* Message.swift in Sources */,
+				057BA38F2A40AA9E00C4E335 /* MessagesInterpreter.swift in Sources */,
+				053105932A20DD1F000BCD6F /* L2CapPeripheralManager.swift in Sources */,
+				057BA38D2A4087B300C4E335 /* Address.swift in Sources */,
 				053105922A20DD1F000BCD6F /* Constants.swift in Sources */,
-				053105972A20DD1F000BCD6F /* L2CapCentral.swift in Sources */,
+				053105972A20DD1F000BCD6F /* L2CapCentralManager.swift in Sources */,
+				057BA3882A3F88F600C4E335 /* MessageType.swift in Sources */,
 				053105952A20DD1F000BCD6F /* Extensions.swift in Sources */,
+				053105B92A20EB6C000BCD6F /* GNutellaBluetoothHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
