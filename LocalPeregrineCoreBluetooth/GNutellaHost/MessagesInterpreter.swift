@@ -6,8 +6,13 @@ protocol MessagesInterpretable {
     func send(data: Data, to receiver: UUID?, from sender: UUID)
 }
 
-internal class MessagesInterpreter: NSObject, MessagesInterpretable {
+class MessagesInterpreter: NSObject, MessagesInterpretable {
     
+    public init(dataDistributor: DataDistributor) {
+        self.dataDistributor = dataDistributor
+    }
+    
+    private let dataDistributor: DataDistributor
     private var connections = Dictionary<UUID,L2CapConnection>()
     private var subscriptions = Dictionary<MessageType, (NSData)->Void>()
     

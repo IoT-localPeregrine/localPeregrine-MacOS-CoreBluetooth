@@ -14,15 +14,10 @@ public class GNutellaBluetoothHost: NSObject {
     override init() {
         central = L2CapCentralManager()
         peripheralManager = L2CapPeripheralManager()
-        messenger = MessagesInterpreter()
+        messenger = MessagesInterpreter(dataDistributor: peripheralManager)
         super.init()
         
         central.delegate = self
-        
-        peripheralManager.connectionHandler = { [weak self] uuid, connection in
-            guard let self = self else { return }
-//            self.connections[uuid] = connection
-        }
     }
     
     public func explore(handler: @escaping(String) -> ()) {
@@ -39,7 +34,7 @@ public class GNutellaBluetoothHost: NSObject {
         guard let peripherals = discoveredNetworks[networkName] else {
             return false
         }
-        discoveredNetworks.removeAll(keepingCapacity: false)
+        discoveredNetworks.removeAll()
         
         peripherals.forEach( {$0.delegate = messenger} )
         return ( central.connect(peripherals: peripherals) == .success // blocking
