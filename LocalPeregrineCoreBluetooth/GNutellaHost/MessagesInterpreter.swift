@@ -3,6 +3,7 @@ import CoreBluetooth
 
 protocol MessagesInterpretable {
     func subscribeToMessages(of type: MessageType, subscription: @escaping (NSData)->Void)
+    func send(data: Data, to receiver: UUID?, from sender: UUID)
 }
 
 internal class MessagesInterpreter: NSObject, MessagesInterpretable {
