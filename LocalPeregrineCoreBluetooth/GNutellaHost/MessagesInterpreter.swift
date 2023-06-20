@@ -8,7 +8,7 @@ protocol MessagesInterpretable {
 internal class MessagesInterpreter: NSObject, MessagesInterpretable {
     
     private var connections = Dictionary<UUID,L2CapConnection>()
-    private var subscriptions = Dictionary< MessageType, (NSData)->Void >()
+    private var subscriptions = Dictionary<MessageType, (NSData)->Void>()
     
     func subscribeToMessages(of type: MessageType, subscription: @escaping (NSData) -> Void) {
         subscriptions[type] = subscription
