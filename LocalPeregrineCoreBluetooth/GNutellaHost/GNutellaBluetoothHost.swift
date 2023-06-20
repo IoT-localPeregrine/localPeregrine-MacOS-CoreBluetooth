@@ -28,6 +28,11 @@ public class GNutellaBluetoothHost: NSObject {
         // передаю что имеется диме
     }
     
+    public func createNetwork(name: String) {
+        central.stopScanning()
+        peripheralManager.startAdvertisingNetwork(name: name)
+    }
+    
     public func connect(networkName: String) -> Bool {
         central.stopScanning()
         
@@ -37,8 +42,10 @@ public class GNutellaBluetoothHost: NSObject {
         discoveredNetworks.removeAll()
         
         peripherals.forEach( {$0.delegate = messenger} )
-        return ( central.connect(peripherals: peripherals) == .success // blocking
-                     && !connectedPeripherals.isEmpty )
+        let result = (central.connect(peripherals: peripherals) == .success // blocking
+                      && !connectedPeripherals.isEmpty)
+        if result { peripheralManager.startAdvertisingNetwork(name: networkName) }
+        return result
     }
     
     public func disconnect(from peripheral: CBPeripheral) {
@@ -75,6 +82,4 @@ extension GNutellaBluetoothHost: L2CapCentralManagerDelegate {
             // TODO: прокидывать диме ошибку
         }
     }
-    
-    
 }
