@@ -87,7 +87,7 @@ class L2CapInternalConnection: NSObject, StreamDelegate, L2CapConnection {
 
 class L2CapCentralConnection: L2CapInternalConnection {
     
-    internal init(peripheral: CBPeripheral, connectionCallback: @escaping L2CapConnectionCallback) {
+    internal init(peripheral: CBPeripheral) {
         self.peripheral = peripheral
         super.init()
     }
