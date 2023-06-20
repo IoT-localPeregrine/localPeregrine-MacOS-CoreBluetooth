@@ -35,12 +35,16 @@ internal class MessagesInterpreter: NSObject, MessagesInterpretable {
         }
     }
     
-    public func send(data: Data, to receiver: UUID?) {
+    public func send(data: Data, to receiver: UUID?, from sender: UUID) {
         if let receiver = receiver,
+           receiver != sender,
            let connection = connections[receiver] {
             connection.send(data: data)
         } else {
-            connections.values.forEach { $0.send(data: data) }
+            connections
+                .filter({ $0.key != sender })
+                .values
+                .forEach { $0.send(data: data) }
         }
         
     }
