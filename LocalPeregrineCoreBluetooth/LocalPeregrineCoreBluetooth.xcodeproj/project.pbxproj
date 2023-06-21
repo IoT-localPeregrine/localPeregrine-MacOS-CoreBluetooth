@@ -50,8 +50,37 @@
 		057BA5012A42943400C4E335 /* SString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4FF2A42924F00C4E335 /* SString+String.swift */; };
 		057BA5042A429DF300C4E335 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5022A429DE600C4E335 /* Peer.swift */; };
 		057BA5072A42A51300C4E335 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5052A42A27F00C4E335 /* Query.swift */; };
-		057BA50A2A42A62100C4E335 /* List_File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5082A42A61800C4E335 /* List_File.swift */; };
-		057BA50C2A42A84800C4E335 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA50B2A42A84800C4E335 /* LinkedList.swift */; };
+		057BA52A2A42D09A00C4E335 /* SString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4FF2A42924F00C4E335 /* SString+String.swift */; };
+		057BA52B2A42D09A00C4E335 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5022A429DE600C4E335 /* Peer.swift */; };
+		057BA52C2A42D09A00C4E335 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5052A42A27F00C4E335 /* Query.swift */; };
+		057BA52F2A42D09A00C4E335 /* DoCPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4BA2A427F8500C4E335 /* DoCPP.swift */; };
+		057BA54B2A42D09B00C4E335 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38A2A402CF800C4E335 /* Queue.swift */; };
+		057BA54C2A42D09B00C4E335 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4782A4269C400C4E335 /* Functional.swift */; };
+		057BA54D2A42D09B00C4E335 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3852A3F88CF00C4E335 /* Message.swift */; };
+		057BA54E2A42D09B00C4E335 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3872A3F88F600C4E335 /* MessageType.swift */; };
+		057BA54F2A42D09B00C4E335 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38C2A4087B300C4E335 /* Address.swift */; };
+		057BA5502A42D09B00C4E335 /* GNutellaBluetoothHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105B82A20EB6C000BCD6F /* GNutellaBluetoothHost.swift */; };
+		057BA5512A42D09B00C4E335 /* MessagesInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */; };
+		057BA5522A42D09B00C4E335 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058B2A20DD1F000BCD6F /* Constants.swift */; };
+		057BA5532A42D09B00C4E335 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058E2A20DD1F000BCD6F /* Extensions.swift */; };
+		057BA5542A42D09B00C4E335 /* L2CapCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105902A20DD1F000BCD6F /* L2CapCentralManager.swift */; };
+		057BA5552A42D09B00C4E335 /* L2CapConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */; };
+		057BA5562A42D09B00C4E335 /* L2CapPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */; };
+		057BA5572A42D09B00C4E335 /* L2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105912A20DD1F000BCD6F /* L2Types.swift */; };
+		057BA5582A42D09B00C4E335 /* OutputStream+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */; };
+		057BA5592A42D0BA00C4E335 /* peer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 057BA47E2A427F1300C4E335 /* peer.hpp */; };
+		057BA55A2A42D0BA00C4E335 /* net.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 057BA47F2A427F1300C4E335 /* net.hpp */; };
+		057BA55B2A42D0BA00C4E335 /* query_hit.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4802A427F1300C4E335 /* query_hit.hpp */; };
+		057BA55C2A42D0BA00C4E335 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4832A427F1300C4E335 /* error.h */; };
+		057BA55D2A42D0BA00C4E335 /* peer.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4842A427F1300C4E335 /* peer.h */; };
+		057BA55E2A42D0BA00C4E335 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4852A427F1300C4E335 /* utils.h */; };
+		057BA55F2A42D0BA00C4E335 /* net.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4862A427F1300C4E335 /* net.h */; };
+		057BA5602A42D0BA00C4E335 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4872A427F1300C4E335 /* file.h */; };
+		057BA5612A42D0BA00C4E335 /* query_hit.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4882A427F1300C4E335 /* query_hit.h */; };
+		057BA5622A42D0BA00C4E335 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4892A427F1300C4E335 /* list.h */; };
+		057BA5632A42D0BA00C4E335 /* string.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA48A2A427F1300C4E335 /* string.h */; };
+		057BA5642A42D0C400C4E335 /* LocalPeregrineCPP-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4BC2A427FC300C4E335 /* LocalPeregrineCPP-Bridging-Header.h */; };
+		057BA5662A42D16100C4E335 /* LocalPeregrineLib-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA5652A42D16100C4E335 /* LocalPeregrineLib-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,8 +137,10 @@
 		057BA4FF2A42924F00C4E335 /* SString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SString+String.swift"; sourceTree = "<group>"; };
 		057BA5022A429DE600C4E335 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
 		057BA5052A42A27F00C4E335 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
-		057BA5082A42A61800C4E335 /* List_File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_File.swift; sourceTree = "<group>"; };
-		057BA50B2A42A84800C4E335 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		057BA5202A42D06400C4E335 /* libLocalPeregrineLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLocalPeregrineLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		057BA5222A42D06400C4E335 /* LocalPeregrineLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalPeregrineLib.h; sourceTree = "<group>"; };
+		057BA5242A42D06400C4E335 /* LocalPeregrineLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalPeregrineLib.m; sourceTree = "<group>"; };
+		057BA5652A42D16100C4E335 /* LocalPeregrineLib-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocalPeregrineLib-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,18 +158,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		057BA51E2A42D06400C4E335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		053105762A20DCC1000BCD6F = {
 			isa = PBXGroup;
 			children = (
+				057BA5652A42D16100C4E335 /* LocalPeregrineLib-Bridging-Header.h */,
 				057BA4BC2A427FC300C4E335 /* LocalPeregrineCPP-Bridging-Header.h */,
 				057BA4B92A427F5F00C4E335 /* CBridges */,
 				057BA47B2A427F1300C4E335 /* LocalPeregrine */,
 				053105B72A20EB52000BCD6F /* GNutellaHost */,
 				0531058A2A20DCFF000BCD6F /* L2CapServices */,
 				057BA4C32A4283B500C4E335 /* LocalPeregrineCPP */,
+				057BA5212A42D06400C4E335 /* LocalPeregrineLib */,
 				053105812A20DCC1000BCD6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +188,7 @@
 			children = (
 				053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */,
 				057BA4C22A4283B500C4E335 /* LocalPeregrineCPP.app */,
+				057BA5202A42D06400C4E335 /* libLocalPeregrineLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,10 +362,17 @@
 				057BA4FF2A42924F00C4E335 /* SString+String.swift */,
 				057BA5022A429DE600C4E335 /* Peer.swift */,
 				057BA5052A42A27F00C4E335 /* Query.swift */,
-				057BA5082A42A61800C4E335 /* List_File.swift */,
-				057BA50B2A42A84800C4E335 /* LinkedList.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		057BA5212A42D06400C4E335 /* LocalPeregrineLib */ = {
+			isa = PBXGroup;
+			children = (
+				057BA5222A42D06400C4E335 /* LocalPeregrineLib.h */,
+				057BA5242A42D06400C4E335 /* LocalPeregrineLib.m */,
+			);
+			path = LocalPeregrineLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +389,26 @@
 				057BA4A62A427F1300C4E335 /* query_hit.h in Headers */,
 				057BA4A82A427F1300C4E335 /* string.h in Headers */,
 				057BA4A32A427F1300C4E335 /* utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA51C2A42D06400C4E335 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5642A42D0C400C4E335 /* LocalPeregrineCPP-Bridging-Header.h in Headers */,
+				057BA5592A42D0BA00C4E335 /* peer.hpp in Headers */,
+				057BA55A2A42D0BA00C4E335 /* net.hpp in Headers */,
+				057BA5662A42D16100C4E335 /* LocalPeregrineLib-Bridging-Header.h in Headers */,
+				057BA55B2A42D0BA00C4E335 /* query_hit.hpp in Headers */,
+				057BA55C2A42D0BA00C4E335 /* error.h in Headers */,
+				057BA55D2A42D0BA00C4E335 /* peer.h in Headers */,
+				057BA55E2A42D0BA00C4E335 /* utils.h in Headers */,
+				057BA55F2A42D0BA00C4E335 /* net.h in Headers */,
+				057BA5602A42D0BA00C4E335 /* file.h in Headers */,
+				057BA5612A42D0BA00C4E335 /* query_hit.h in Headers */,
+				057BA5622A42D0BA00C4E335 /* list.h in Headers */,
+				057BA5632A42D0BA00C4E335 /* string.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +450,23 @@
 			productReference = 057BA4C22A4283B500C4E335 /* LocalPeregrineCPP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		057BA51F2A42D06400C4E335 /* LocalPeregrineLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057BA5282A42D06400C4E335 /* Build configuration list for PBXNativeTarget "LocalPeregrineLib" */;
+			buildPhases = (
+				057BA51C2A42D06400C4E335 /* Headers */,
+				057BA51D2A42D06400C4E335 /* Sources */,
+				057BA51E2A42D06400C4E335 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalPeregrineLib;
+			productName = LocalPeregrineLib;
+			productReference = 057BA5202A42D06400C4E335 /* libLocalPeregrineLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -397,6 +482,9 @@
 						LastSwiftMigration = 1420;
 					};
 					057BA4C12A4283B500C4E335 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					057BA51F2A42D06400C4E335 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -416,6 +504,7 @@
 			targets = (
 				0531057F2A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
 				057BA4C12A4283B500C4E335 /* LocalPeregrineCPP */,
+				057BA51F2A42D06400C4E335 /* LocalPeregrineLib */,
 			);
 		};
 /* End PBXProject section */
@@ -466,7 +555,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				057BA5072A42A51300C4E335 /* Query.swift in Sources */,
-				057BA50A2A42A62100C4E335 /* List_File.swift in Sources */,
 				057BA4FC2A4284FF00C4E335 /* LocalPeregrineCPPApp.swift in Sources */,
 				057BA5012A42943400C4E335 /* SString+String.swift in Sources */,
 				057BA4FD2A4284FF00C4E335 /* ContentView.swift in Sources */,
@@ -485,8 +573,32 @@
 				057BA4F82A42847600C4E335 /* L2CapConnection.swift in Sources */,
 				057BA4F92A42847600C4E335 /* L2CapPeripheralManager.swift in Sources */,
 				057BA4FA2A42847600C4E335 /* L2Types.swift in Sources */,
-				057BA50C2A42A84800C4E335 /* LinkedList.swift in Sources */,
 				057BA4FB2A42847600C4E335 /* OutputStream+Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA51D2A42D06400C4E335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA52A2A42D09A00C4E335 /* SString+String.swift in Sources */,
+				057BA52B2A42D09A00C4E335 /* Peer.swift in Sources */,
+				057BA52C2A42D09A00C4E335 /* Query.swift in Sources */,
+				057BA52F2A42D09A00C4E335 /* DoCPP.swift in Sources */,
+				057BA54B2A42D09B00C4E335 /* Queue.swift in Sources */,
+				057BA54C2A42D09B00C4E335 /* Functional.swift in Sources */,
+				057BA54D2A42D09B00C4E335 /* Message.swift in Sources */,
+				057BA54E2A42D09B00C4E335 /* MessageType.swift in Sources */,
+				057BA54F2A42D09B00C4E335 /* Address.swift in Sources */,
+				057BA5502A42D09B00C4E335 /* GNutellaBluetoothHost.swift in Sources */,
+				057BA5512A42D09B00C4E335 /* MessagesInterpreter.swift in Sources */,
+				057BA5522A42D09B00C4E335 /* Constants.swift in Sources */,
+				057BA5532A42D09B00C4E335 /* Extensions.swift in Sources */,
+				057BA5542A42D09B00C4E335 /* L2CapCentralManager.swift in Sources */,
+				057BA5552A42D09B00C4E335 /* L2CapConnection.swift in Sources */,
+				057BA5562A42D09B00C4E335 /* L2CapPeripheralManager.swift in Sources */,
+				057BA5572A42D09B00C4E335 /* L2Types.swift in Sources */,
+				057BA5582A42D09B00C4E335 /* OutputStream+Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +884,36 @@
 			};
 			name = Release;
 		};
+		057BA5262A42D06400C4E335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		057BA5272A42D06400C4E335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -798,6 +940,15 @@
 			buildConfigurations = (
 				057BA4CF2A4283B700C4E335 /* Debug */,
 				057BA4D02A4283B700C4E335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057BA5282A42D06400C4E335 /* Build configuration list for PBXNativeTarget "LocalPeregrineLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057BA5262A42D06400C4E335 /* Debug */,
+				057BA5272A42D06400C4E335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

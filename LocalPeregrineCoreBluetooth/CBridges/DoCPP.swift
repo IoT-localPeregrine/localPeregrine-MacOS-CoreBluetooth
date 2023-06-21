@@ -74,13 +74,24 @@ public func subscribePong(_ pongConsumer: Wrapper_PongConsumerFunc) -> NetError 
 
 @_cdecl("inet_subscribe_query")
 public func subscribeQuery(_ queryConsumer: Wrapper_QueryConsumerFunc) -> NetError {
-    CBridge.instance.host.subscribeToIncomingMessages(type: .pong) { data in
-        guard let sstring = String(decoding: data, as: UTF8.self).toSString(),
-              let queryData = queryConsumer.func(sstring).asData()
+    CBridge.instance.host.subscribeToIncomingMessages(type: .query) { data in
+        let string = String(decoding: data, as: UTF8.self)
+        guard !string.isEmpty, let queryData = queryConsumer.func(string.toSString()).asData() as? Data
         else {
             return
         }
-        CBridge.instance.host.sendMessage(type: .queryHit, data: queryData as Data)
+        CBridge.instance.host.sendMessage(type: .queryHit, data: queryData)
+    }
+    return .init(0)
+}
+
+@_cdecl("inet_subscribe_query_hit")
+public func subscribeQueryHit(_ queryConsumer: Wrapper_QueryHitConsumerFunc) -> NetError {
+    CBridge.instance.host.subscribeToIncomingMessages(type: .queryHit) { data in
+        guard let queryData = QueryHit(from: data as NSData) else {
+            return
+        }
+        queryConsumer.func(queryData)
     }
     return .init(0)
 }

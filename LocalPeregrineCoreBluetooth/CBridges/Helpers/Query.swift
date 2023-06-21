@@ -9,7 +9,7 @@ extension QueryHit {
             return nil
         }
         self.init()
-        files = coding.files
+        files = coding.getList()
     }
     
     func asData() -> NSData? {
@@ -23,7 +23,7 @@ extension QueryHit {
     }
 
     @objc(QueryHitCoding)class QueryHitCoding: NSObject, NSCoding {
-        let files: [ListNode_File]
+        private let files: [ListNode_File]
 
         init(_ myStruct: QueryHit) {
             files = listToArray(list: myStruct.files)
@@ -41,12 +41,21 @@ extension QueryHit {
             return nodes
         }
         
-        func arrayToList(_ array: [ListNode_File]) -> List_File {
-            array[0].
+        func getList() -> List_File {
+            return arrayToList(files)
+        }
+        
+        private func arrayToList(_ anArray: [ListNode_File]) -> List_File {
+            var array = anArray
+            for i in 0..<array.count {
+                let currentIndex = i
+                let nextIndex = (i + 1) % array.count
+                array[currentIndex].next = UnsafeMutablePointer<ListNode_File>(&array[nextIndex])
+            }
         }
 
         required init?(coder aDecoder: NSCoder) {
-            files = aDecoder.decodeObject(forKey: "files") as! List_File
+            files = aDecoder.decodeObject(forKey: "files") as! [ListNode_File]
         }
 
         func encode(with coder: NSCoder) {
