@@ -11,7 +11,7 @@ public class GNutellaBluetoothHost: NSObject {
     private var discoveredNetworkHandler: ((String) -> ())?
     private var discoveredNetworks = Dictionary<String, [CBPeripheral]>()
     
-    override init() {
+    public override init() {
         central = L2CapCentralManager()
         peripheralManager = L2CapPeripheralManager()
         messenger = MessagesInterpreter(dataDistributor: peripheralManager)

@@ -21,6 +21,7 @@
 		057BA38B2A402CF800C4E335 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38A2A402CF800C4E335 /* Queue.swift */; };
 		057BA38D2A4087B300C4E335 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38C2A4087B300C4E335 /* Address.swift */; };
 		057BA38F2A40AA9E00C4E335 /* MessagesInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */; };
+		057BA4792A4269C400C4E335 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4782A4269C400C4E335 /* Functional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		057BA38A2A402CF800C4E335 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		057BA38C2A4087B300C4E335 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesInterpreter.swift; sourceTree = "<group>"; };
+		057BA4782A4269C400C4E335 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		053105762A20DCC1000BCD6F = {
 			isa = PBXGroup;
 			children = (
+				057BA47A2A42734100C4E335 /* New Group */,
 				053105B72A20EB52000BCD6F /* GNutellaHost */,
 				0531058A2A20DCFF000BCD6F /* L2CapServices */,
 				053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
@@ -117,8 +120,16 @@
 			isa = PBXGroup;
 			children = (
 				057BA38A2A402CF800C4E335 /* Queue.swift */,
+				057BA4782A4269C400C4E335 /* Functional.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		057BA47A2A42734100C4E335 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				057BA38F2A40AA9E00C4E335 /* MessagesInterpreter.swift in Sources */,
 				053105932A20DD1F000BCD6F /* L2CapPeripheralManager.swift in Sources */,
 				057BA38D2A4087B300C4E335 /* Address.swift in Sources */,
+				057BA4792A4269C400C4E335 /* Functional.swift in Sources */,
 				053105922A20DD1F000BCD6F /* Constants.swift in Sources */,
 				053105972A20DD1F000BCD6F /* L2CapCentralManager.swift in Sources */,
 				057BA3882A3F88F600C4E335 /* MessageType.swift in Sources */,

@@ -1,9 +1,10 @@
 internal struct Message {
-    let sender: LPBluetoothAddress
+    var sender: LPBluetoothAddress
     let receiver: LPBluetoothAddress
     let type: MessageType
     let data: Data
     let ttl: UInt8
+    let id: UInt64
 }
 
 extension Message {
@@ -19,6 +20,7 @@ extension Message {
         sender = coding.sender
         receiver = coding.receiver
         ttl = coding.ttl
+        id = coding.id
     }
     
     func asData() -> NSData? {
@@ -37,6 +39,7 @@ extension Message {
         let type: MessageType
         let data: Data
         let ttl: UInt8
+        let id: UInt64
 
         init(_ myStruct: Message) {
             sender = myStruct.sender
@@ -44,6 +47,7 @@ extension Message {
             type = myStruct.type
             data = myStruct.data
             ttl = myStruct.ttl
+            id = myStruct.id
         }
 
         required init?(coder aDecoder: NSCoder) {
@@ -52,6 +56,7 @@ extension Message {
             sender = aDecoder.decodeObject(forKey: "sender") as! LPBluetoothAddress
             receiver = aDecoder.decodeObject(forKey: "receiver") as! LPBluetoothAddress
             ttl = (aDecoder.decodeObject(forKey: "ttl") as! UInt8) - 1
+            id = aDecoder.decodeObject(forKey: "id") as! UInt64
         }
 
         func encode(with coder: NSCoder) {
@@ -60,6 +65,7 @@ extension Message {
             coder.encode(type, forKey: "type")
             coder.encode(data, forKey: "data")
             coder.encode(ttl, forKey: "ttl")
+            coder.encode(id, forKey: "id")
         }
     }
 }

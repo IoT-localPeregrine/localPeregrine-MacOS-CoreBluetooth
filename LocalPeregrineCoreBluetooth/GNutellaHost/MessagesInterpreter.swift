@@ -15,26 +15,34 @@ class MessagesInterpreter: NSObject, MessagesInterpretable {
     private let dataDistributor: DataDistributor
     private var connections = Dictionary<UUID,L2CapConnection>()
     private var subscriptions = Dictionary<MessageType, (NSData)->Void>()
+    private var messagesPassed = Dictionary<UInt64, UUID>()
+    private var messagesSent = Dictionary<UInt64, Bool>()
+    private var lastMessageId: UInt64 = 0
     
     func subscribeToMessages(of type: MessageType, subscription: @escaping (NSData) -> Void) {
         subscriptions[type] = subscription
     }
     
     func handleIncomingMesage(message: Message) {
-        guard !message.data.isEmpty else { return }
+        guard message.ttl > 0,
+              ( (message.type == .ping || message.type == .query)
+                ^ messagesPassed.keys.contains(message.id) ) || messagesSent.keys.contains(message.id),
+              let messageData = message.asData() as? Data else { return }
+        
+        if lastMessageId < message.id { lastMessageId = message.id }
+        
         switch message.type {
         case .ping:
-            // pass ping to all connected centrals
-            return
+            messagesPassed[message.id] = message.sender.address
+            subscriptions[.ping]?(message.data as NSData)
+            send(data: messageData, to: nil, from: message.sender.address)
         case .pong:
-            // search for peripheral from where ping was got
-            return
+            subscriptions[.pong]?(message.data as NSData)
         case .query:
-            // pass message to Дима & to all connected periferals
-            return
+            subscriptions[.query]?(message.data as NSData)
+            send(data: messageData, to: nil, from: message.sender.address)
         case .queryHit:
-            // search for peripheral from where query was got
-            return
+            subscriptions[.queryHit]?(message.data as NSData)
         case .push:
             // хз
             return
@@ -101,7 +109,8 @@ extension MessagesInterpreter: CBPeripheralDelegate {
         }
         
         if let dataValue = characteristic.value,
-           let message = Message(from: dataValue as NSData) {
+           var message = Message(from: dataValue as NSData) {
+            message.sender = LPBluetoothAddress(address: peripheral.identifier)
             handleIncomingMesage(message: message)
         } else {
             print("Problem decoding message")
