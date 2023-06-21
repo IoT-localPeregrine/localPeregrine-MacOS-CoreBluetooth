@@ -1,0 +1,3 @@
+[submodule "LocalPeregrineCoreBluetooth/LocalPeregrine"]
+	path = LocalPeregrineCoreBluetooth/LocalPeregrine
+	url = https://github.com/IoT-localPeregrine/localPeregrine.git
