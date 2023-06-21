@@ -81,7 +81,7 @@ extension L2CapPeripheralManager: CBPeripheralManagerDelegate {
     
     public func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         if peripheral.state == .poweredOn {
-            peripheralUUID = periphe
+            
         }
     }
     

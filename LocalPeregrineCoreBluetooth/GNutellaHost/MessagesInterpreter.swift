@@ -3,7 +3,7 @@ import CoreBluetooth
 
 protocol MessagesInterpretable {
     func subscribeToMessages(of type: MessageType, subscription: @escaping (NSData)->Void)
-    func send(data: Data, to receiver: UUID?, from sender: UUID)
+    func send(message: Message, from sender: UUID)
 }
 
 class MessagesInterpreter: NSObject, MessagesInterpretable {
@@ -16,7 +16,7 @@ class MessagesInterpreter: NSObject, MessagesInterpretable {
     private var connections = Dictionary<UUID,L2CapConnection>()
     private var subscriptions = Dictionary<MessageType, (NSData)->Void>()
     private var messagesPassed = Dictionary<UInt64, UUID>()
-    private var messagesSent = Dictionary<UInt64, Bool>()
+    private var messagesSent = Set<UInt64>()
     private var lastMessageId: UInt64 = 0
     
     func subscribeToMessages(of type: MessageType, subscription: @escaping (NSData) -> Void) {
@@ -25,40 +25,50 @@ class MessagesInterpreter: NSObject, MessagesInterpretable {
     
     func handleIncomingMesage(message: Message) {
         guard message.ttl > 0,
-              ( (message.type == .ping || message.type == .query)
-                ^ messagesPassed.keys.contains(message.id) ) || messagesSent.keys.contains(message.id),
+              ( (message.type == .ping || message.type == .query) // due to gnutella protocol:
+                ^ messagesPassed.keys.contains(message.id) )      // ping&pong + query&queryHit have the same id
+                || messagesSent.contains(message.id),
               let messageData = message.asData() as? Data else { return }
         
         if lastMessageId < message.id { lastMessageId = message.id }
         
         switch message.type {
-        case .ping:
+        case .ping, .query:
             messagesPassed[message.id] = message.sender.address
-            subscriptions[.ping]?(message.data as NSData)
-            send(data: messageData, to: nil, from: message.sender.address)
-        case .pong:
-            subscriptions[.pong]?(message.data as NSData)
-        case .query:
-            subscriptions[.query]?(message.data as NSData)
-            send(data: messageData, to: nil, from: message.sender.address)
-        case .queryHit:
-            subscriptions[.queryHit]?(message.data as NSData)
+            subscriptions[message.type]?(message.data as NSData)
+            if !messagesSent.contains(message.id) {
+                send(message: message, to: nil, from: message.sender.address)
+            }
+        case .pong, .queryHit:
+            if messagesSent.contains(message.id) {
+                subscriptions[message.type]?(message.data as NSData)
+            } else {
+                send(message: message, to: messagesPassed[message.id], from: message.sender.address)
+            }
         case .push:
             // хз
             return
         }
     }
     
-    public func send(data: Data, to receiver: UUID?, from sender: UUID) {
+    public func send(message: Message, from sender: UUID) {
+        messagesSent.insert(message.id)
+        send(message: message, to: nil, from: sender)
+    }
+    
+    private func send(message: Message, to receiver: UUID?, from sender: UUID) {
         if let receiver = receiver,
            receiver != sender,
-           let connection = connections[receiver] {
-            connection.send(data: data)
+           let connection = connections[receiver]
+        {
+            var newMessage = message
+            newMessage.id = lastMessageId + 1
+            connection.send(data: newMessage.data)
         } else {
             connections
                 .filter({ $0.key != sender })
                 .values
-                .forEach { $0.send(data: data) }
+                .forEach { $0.send(data: message.data) }
         }
         
     }

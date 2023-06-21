@@ -52,8 +52,17 @@ public class GNutellaBluetoothHost: NSObject {
         central.disconnect(peripheral: peripheral)
     }
     
-    public func send(data: Data, to receiver: UUID?, from sender: UUID) {
-        messenger.send(data: data, to: receiver, from: sender)
+    func sendMessage(type: MessageType, data: Data) {
+        let message = Message(
+            sender: LPBluetoothAddress(address: UUID()),
+            receiver: LPBluetoothAddress(address: UUID()),
+            type: type,
+            data: data,
+            ttl: 4,
+            id: 0
+        )
+        
+        messenger.send(message: message, from: UUID())
     }
     
     func subscribeToIncomingMessages(type: MessageType, closure: @escaping((NSData) -> Void) ) {

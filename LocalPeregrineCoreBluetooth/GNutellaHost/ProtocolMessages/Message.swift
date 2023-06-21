@@ -1,10 +1,12 @@
+import Foundation
+
 internal struct Message {
     var sender: LPBluetoothAddress
     let receiver: LPBluetoothAddress
     let type: MessageType
     let data: Data
     let ttl: UInt8
-    let id: UInt64
+    var id: UInt64
 }
 
 extension Message {
