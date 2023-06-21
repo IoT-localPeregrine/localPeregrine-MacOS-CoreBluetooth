@@ -30,7 +30,6 @@
 		057BA4A82A427F1300C4E335 /* string.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA48A2A427F1300C4E335 /* string.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		057BA4C92A4283B700C4E335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA4C82A4283B700C4E335 /* Assets.xcassets */; };
 		057BA4CD2A4283B700C4E335 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA4CC2A4283B700C4E335 /* Preview Assets.xcassets */; };
-		057BA4D22A42847500C4E335 /* DoCPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4BA2A427F8500C4E335 /* DoCPP.swift */; };
 		057BA4EE2A42847600C4E335 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38A2A402CF800C4E335 /* Queue.swift */; };
 		057BA4EF2A42847600C4E335 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4782A4269C400C4E335 /* Functional.swift */; };
 		057BA4F02A42847600C4E335 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3852A3F88CF00C4E335 /* Message.swift */; };
@@ -558,7 +557,6 @@
 				057BA4FC2A4284FF00C4E335 /* LocalPeregrineCPPApp.swift in Sources */,
 				057BA5012A42943400C4E335 /* SString+String.swift in Sources */,
 				057BA4FD2A4284FF00C4E335 /* ContentView.swift in Sources */,
-				057BA4D22A42847500C4E335 /* DoCPP.swift in Sources */,
 				057BA4EE2A42847600C4E335 /* Queue.swift in Sources */,
 				057BA4EF2A42847600C4E335 /* Functional.swift in Sources */,
 				057BA4F02A42847600C4E335 /* Message.swift in Sources */,
@@ -887,10 +885,13 @@
 		057BA5262A42D06400C4E335 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				EXECUTABLE_PREFIX = lib;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -902,10 +903,13 @@
 		057BA5272A42D06400C4E335 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				EXECUTABLE_PREFIX = lib;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

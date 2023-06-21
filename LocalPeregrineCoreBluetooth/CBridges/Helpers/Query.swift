@@ -23,9 +23,11 @@ extension QueryHit {
     }
 
     @objc(QueryHitCoding)class QueryHitCoding: NSObject, NSCoding {
-        private let files: [ListNode_File]
+        private var files: [ListNode_File]
 
         init(_ myStruct: QueryHit) {
+            files = []
+            super.init()
             files = listToArray(list: myStruct.files)
         }
         
@@ -50,8 +52,14 @@ extension QueryHit {
             for i in 0..<array.count {
                 let currentIndex = i
                 let nextIndex = (i + 1) % array.count
-                array[currentIndex].next = UnsafeMutablePointer<ListNode_File>(&array[nextIndex])
+                array[currentIndex].next = UnsafeMutablePointer<ListNode_File>.allocate(capacity: 1)
+                array[currentIndex].next.initialize(to: array[nextIndex])
             }
+            var headPointer = UnsafeMutablePointer<ListNode_File>.allocate(capacity: 1)
+            headPointer.initialize(to: array.first!)
+            var tailPointer = UnsafeMutablePointer<ListNode_File>.allocate(capacity: 1)
+            tailPointer.initialize(to: array.last!)
+            return List_File(head: headPointer, tail: tailPointer, count: array.count)
         }
 
         required init?(coder aDecoder: NSCoder) {
