@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053105842A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		053105922A20DD1F000BCD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058B2A20DD1F000BCD6F /* Constants.swift */; };
 		053105932A20DD1F000BCD6F /* L2CapPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */; };
 		053105942A20DD1F000BCD6F /* OutputStream+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */; };
@@ -22,11 +21,41 @@
 		057BA38D2A4087B300C4E335 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38C2A4087B300C4E335 /* Address.swift */; };
 		057BA38F2A40AA9E00C4E335 /* MessagesInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */; };
 		057BA4792A4269C400C4E335 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4782A4269C400C4E335 /* Functional.swift */; };
+		057BA4A12A427F1300C4E335 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4832A427F1300C4E335 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A22A427F1300C4E335 /* peer.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4842A427F1300C4E335 /* peer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A32A427F1300C4E335 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4852A427F1300C4E335 /* utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A52A427F1300C4E335 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4872A427F1300C4E335 /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A62A427F1300C4E335 /* query_hit.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4882A427F1300C4E335 /* query_hit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A72A427F1300C4E335 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA4892A427F1300C4E335 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4A82A427F1300C4E335 /* string.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA48A2A427F1300C4E335 /* string.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA4C92A4283B700C4E335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA4C82A4283B700C4E335 /* Assets.xcassets */; };
+		057BA4CD2A4283B700C4E335 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA4CC2A4283B700C4E335 /* Preview Assets.xcassets */; };
+		057BA4D22A42847500C4E335 /* DoCPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4BA2A427F8500C4E335 /* DoCPP.swift */; };
+		057BA4EE2A42847600C4E335 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38A2A402CF800C4E335 /* Queue.swift */; };
+		057BA4EF2A42847600C4E335 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4782A4269C400C4E335 /* Functional.swift */; };
+		057BA4F02A42847600C4E335 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3852A3F88CF00C4E335 /* Message.swift */; };
+		057BA4F12A42847600C4E335 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA3872A3F88F600C4E335 /* MessageType.swift */; };
+		057BA4F22A42847600C4E335 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38C2A4087B300C4E335 /* Address.swift */; };
+		057BA4F32A42847600C4E335 /* GNutellaBluetoothHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105B82A20EB6C000BCD6F /* GNutellaBluetoothHost.swift */; };
+		057BA4F42A42847600C4E335 /* MessagesInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */; };
+		057BA4F52A42847600C4E335 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058B2A20DD1F000BCD6F /* Constants.swift */; };
+		057BA4F62A42847600C4E335 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058E2A20DD1F000BCD6F /* Extensions.swift */; };
+		057BA4F72A42847600C4E335 /* L2CapCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105902A20DD1F000BCD6F /* L2CapCentralManager.swift */; };
+		057BA4F82A42847600C4E335 /* L2CapConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058F2A20DD1F000BCD6F /* L2CapConnection.swift */; };
+		057BA4F92A42847600C4E335 /* L2CapPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */; };
+		057BA4FA2A42847600C4E335 /* L2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053105912A20DD1F000BCD6F /* L2Types.swift */; };
+		057BA4FB2A42847600C4E335 /* OutputStream+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */; };
+		057BA4FC2A4284FF00C4E335 /* LocalPeregrineCPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4C42A4283B500C4E335 /* LocalPeregrineCPPApp.swift */; };
+		057BA4FD2A4284FF00C4E335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4C62A4283B500C4E335 /* ContentView.swift */; };
+		057BA5012A42943400C4E335 /* SString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA4FF2A42924F00C4E335 /* SString+String.swift */; };
+		057BA5042A429DF300C4E335 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5022A429DE600C4E335 /* Peer.swift */; };
+		057BA5072A42A51300C4E335 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5052A42A27F00C4E335 /* Query.swift */; };
+		057BA50A2A42A62100C4E335 /* List_File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5082A42A61800C4E335 /* List_File.swift */; };
+		057BA50C2A42A84800C4E335 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA50B2A42A84800C4E335 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalPeregrineCoreBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalPeregrineCoreBluetooth.h; sourceTree = "<group>"; };
 		0531058B2A20DD1F000BCD6F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0531058C2A20DD1F000BCD6F /* L2CapPeripheralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CapPeripheralManager.swift; sourceTree = "<group>"; };
 		0531058D2A20DD1F000BCD6F /* OutputStream+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OutputStream+Data.swift"; sourceTree = "<group>"; };
@@ -41,10 +70,57 @@
 		057BA38C2A4087B300C4E335 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		057BA38E2A40AA9E00C4E335 /* MessagesInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesInterpreter.swift; sourceTree = "<group>"; };
 		057BA4782A4269C400C4E335 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		057BA47E2A427F1300C4E335 /* peer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = peer.hpp; sourceTree = "<group>"; };
+		057BA47F2A427F1300C4E335 /* net.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = net.hpp; sourceTree = "<group>"; };
+		057BA4802A427F1300C4E335 /* query_hit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = query_hit.hpp; sourceTree = "<group>"; };
+		057BA4832A427F1300C4E335 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		057BA4842A427F1300C4E335 /* peer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = peer.h; sourceTree = "<group>"; };
+		057BA4852A427F1300C4E335 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		057BA4862A427F1300C4E335 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		057BA4872A427F1300C4E335 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		057BA4882A427F1300C4E335 /* query_hit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = query_hit.h; sourceTree = "<group>"; };
+		057BA4892A427F1300C4E335 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		057BA48A2A427F1300C4E335 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
+		057BA48C2A427F1300C4E335 /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		057BA48D2A427F1300C4E335 /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		057BA48E2A427F1300C4E335 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		057BA48F2A427F1300C4E335 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		057BA4922A427F1300C4E335 /* Query.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Query.jpeg; sourceTree = "<group>"; };
+		057BA4932A427F1300C4E335 /* QueryHit_ResultSet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QueryHit_ResultSet.jpeg; sourceTree = "<group>"; };
+		057BA4942A427F1300C4E335 /* p2p_schema.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p2p_schema.jpg; sourceTree = "<group>"; };
+		057BA4952A427F1300C4E335 /* Push.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Push.jpeg; sourceTree = "<group>"; };
+		057BA4962A427F1300C4E335 /* Download_Workflow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Download_Workflow.jpg; sourceTree = "<group>"; };
+		057BA4972A427F1300C4E335 /* IoT_internals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IoT_internals.jpg; sourceTree = "<group>"; };
+		057BA4982A427F1300C4E335 /* QueryHit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QueryHit.jpeg; sourceTree = "<group>"; };
+		057BA4992A427F1300C4E335 /* Pong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pong.jpeg; sourceTree = "<group>"; };
+		057BA49A2A427F1300C4E335 /* Descriptor_Header.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Descriptor_Header.jpeg; sourceTree = "<group>"; };
+		057BA49B2A427F1300C4E335 /* spec_tcp_ip.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = spec_tcp_ip.md; sourceTree = "<group>"; };
+		057BA49C2A427F1300C4E335 /* use_cases.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = use_cases.md; sourceTree = "<group>"; };
+		057BA49D2A427F1300C4E335 /* questions.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = questions.md; sourceTree = "<group>"; };
+		057BA4BA2A427F8500C4E335 /* DoCPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCPP.swift; sourceTree = "<group>"; };
+		057BA4BC2A427FC300C4E335 /* LocalPeregrineCPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocalPeregrineCPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		057BA4C22A4283B500C4E335 /* LocalPeregrineCPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalPeregrineCPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		057BA4C42A4283B500C4E335 /* LocalPeregrineCPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPeregrineCPPApp.swift; sourceTree = "<group>"; };
+		057BA4C62A4283B500C4E335 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		057BA4C82A4283B700C4E335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		057BA4CA2A4283B700C4E335 /* LocalPeregrineCPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalPeregrineCPP.entitlements; sourceTree = "<group>"; };
+		057BA4CC2A4283B700C4E335 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		057BA4FF2A42924F00C4E335 /* SString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SString+String.swift"; sourceTree = "<group>"; };
+		057BA5022A429DE600C4E335 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		057BA5052A42A27F00C4E335 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		057BA5082A42A61800C4E335 /* List_File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_File.swift; sourceTree = "<group>"; };
+		057BA50B2A42A84800C4E335 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0531057D2A20DCC1000BCD6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA4BF2A4283B500C4E335 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,10 +133,12 @@
 		053105762A20DCC1000BCD6F = {
 			isa = PBXGroup;
 			children = (
-				057BA47A2A42734100C4E335 /* New Group */,
+				057BA4BC2A427FC300C4E335 /* LocalPeregrineCPP-Bridging-Header.h */,
+				057BA4B92A427F5F00C4E335 /* CBridges */,
+				057BA47B2A427F1300C4E335 /* LocalPeregrine */,
 				053105B72A20EB52000BCD6F /* GNutellaHost */,
 				0531058A2A20DCFF000BCD6F /* L2CapServices */,
-				053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
+				057BA4C32A4283B500C4E335 /* LocalPeregrineCPP */,
 				053105812A20DCC1000BCD6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,16 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */,
+				057BA4C22A4283B500C4E335 /* LocalPeregrineCPP.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		053105822A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */ = {
-			isa = PBXGroup;
-			children = (
-				053105832A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h */,
-			);
-			path = LocalPeregrineCoreBluetooth;
 			sourceTree = "<group>";
 		};
 		0531058A2A20DCFF000BCD6F /* L2CapServices */ = {
@@ -125,11 +196,135 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
-		057BA47A2A42734100C4E335 /* New Group */ = {
+		057BA47B2A427F1300C4E335 /* LocalPeregrine */ = {
 			isa = PBXGroup;
 			children = (
+				057BA47C2A427F1300C4E335 /* gnutella-cpp */,
+				057BA4812A427F1300C4E335 /* gnutella-c */,
+				057BA48E2A427F1300C4E335 /* README.md */,
+				057BA48F2A427F1300C4E335 /* .gitignore */,
+				057BA4902A427F1300C4E335 /* doc */,
 			);
-			path = "New Group";
+			path = LocalPeregrine;
+			sourceTree = "<group>";
+		};
+		057BA47C2A427F1300C4E335 /* gnutella-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				057BA47D2A427F1300C4E335 /* include */,
+			);
+			path = "gnutella-cpp";
+			sourceTree = "<group>";
+		};
+		057BA47D2A427F1300C4E335 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				057BA47E2A427F1300C4E335 /* peer.hpp */,
+				057BA47F2A427F1300C4E335 /* net.hpp */,
+				057BA4802A427F1300C4E335 /* query_hit.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		057BA4812A427F1300C4E335 /* gnutella-c */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4822A427F1300C4E335 /* include */,
+				057BA48B2A427F1300C4E335 /* src */,
+			);
+			path = "gnutella-c";
+			sourceTree = "<group>";
+		};
+		057BA4822A427F1300C4E335 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4832A427F1300C4E335 /* error.h */,
+				057BA4842A427F1300C4E335 /* peer.h */,
+				057BA4852A427F1300C4E335 /* utils.h */,
+				057BA4862A427F1300C4E335 /* net.h */,
+				057BA4872A427F1300C4E335 /* file.h */,
+				057BA4882A427F1300C4E335 /* query_hit.h */,
+				057BA4892A427F1300C4E335 /* list.h */,
+				057BA48A2A427F1300C4E335 /* string.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		057BA48B2A427F1300C4E335 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				057BA48C2A427F1300C4E335 /* string.c */,
+				057BA48D2A427F1300C4E335 /* file.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		057BA4902A427F1300C4E335 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4912A427F1300C4E335 /* images */,
+				057BA49B2A427F1300C4E335 /* spec_tcp_ip.md */,
+				057BA49C2A427F1300C4E335 /* use_cases.md */,
+				057BA49D2A427F1300C4E335 /* questions.md */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		057BA4912A427F1300C4E335 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4922A427F1300C4E335 /* Query.jpeg */,
+				057BA4932A427F1300C4E335 /* QueryHit_ResultSet.jpeg */,
+				057BA4942A427F1300C4E335 /* p2p_schema.jpg */,
+				057BA4952A427F1300C4E335 /* Push.jpeg */,
+				057BA4962A427F1300C4E335 /* Download_Workflow.jpg */,
+				057BA4972A427F1300C4E335 /* IoT_internals.jpg */,
+				057BA4982A427F1300C4E335 /* QueryHit.jpeg */,
+				057BA4992A427F1300C4E335 /* Pong.jpeg */,
+				057BA49A2A427F1300C4E335 /* Descriptor_Header.jpeg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		057BA4B92A427F5F00C4E335 /* CBridges */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4FE2A42923D00C4E335 /* Helpers */,
+				057BA4BA2A427F8500C4E335 /* DoCPP.swift */,
+			);
+			path = CBridges;
+			sourceTree = "<group>";
+		};
+		057BA4C32A4283B500C4E335 /* LocalPeregrineCPP */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4C42A4283B500C4E335 /* LocalPeregrineCPPApp.swift */,
+				057BA4C62A4283B500C4E335 /* ContentView.swift */,
+				057BA4C82A4283B700C4E335 /* Assets.xcassets */,
+				057BA4CA2A4283B700C4E335 /* LocalPeregrineCPP.entitlements */,
+				057BA4CB2A4283B700C4E335 /* Preview Content */,
+			);
+			path = LocalPeregrineCPP;
+			sourceTree = "<group>";
+		};
+		057BA4CB2A4283B700C4E335 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4CC2A4283B700C4E335 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		057BA4FE2A42923D00C4E335 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				057BA4FF2A42924F00C4E335 /* SString+String.swift */,
+				057BA5022A429DE600C4E335 /* Peer.swift */,
+				057BA5052A42A27F00C4E335 /* Query.swift */,
+				057BA5082A42A61800C4E335 /* List_File.swift */,
+				057BA50B2A42A84800C4E335 /* LinkedList.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +334,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				053105842A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.h in Headers */,
+				057BA4A52A427F1300C4E335 /* file.h in Headers */,
+				057BA4A12A427F1300C4E335 /* error.h in Headers */,
+				057BA4A72A427F1300C4E335 /* list.h in Headers */,
+				057BA4A22A427F1300C4E335 /* peer.h in Headers */,
+				057BA4A62A427F1300C4E335 /* query_hit.h in Headers */,
+				057BA4A82A427F1300C4E335 /* string.h in Headers */,
+				057BA4A32A427F1300C4E335 /* utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +365,23 @@
 			productReference = 053105802A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		057BA4C12A4283B500C4E335 /* LocalPeregrineCPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057BA4CE2A4283B700C4E335 /* Build configuration list for PBXNativeTarget "LocalPeregrineCPP" */;
+			buildPhases = (
+				057BA4BE2A4283B500C4E335 /* Sources */,
+				057BA4BF2A4283B500C4E335 /* Frameworks */,
+				057BA4C02A4283B500C4E335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalPeregrineCPP;
+			productName = LocalPeregrineCPP;
+			productReference = 057BA4C22A4283B500C4E335 /* LocalPeregrineCPP.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,11 +389,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					0531057F2A20DCC1000BCD6F = {
 						CreatedOnToolsVersion = 14.2;
 						LastSwiftMigration = 1420;
+					};
+					057BA4C12A4283B500C4E335 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -193,6 +415,7 @@
 			projectRoot = "";
 			targets = (
 				0531057F2A20DCC1000BCD6F /* LocalPeregrineCoreBluetooth */,
+				057BA4C12A4283B500C4E335 /* LocalPeregrineCPP */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +425,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA4C02A4283B500C4E335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA4CD2A4283B700C4E335 /* Preview Assets.xcassets in Resources */,
+				057BA4C92A4283B700C4E335 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +458,35 @@
 				057BA3882A3F88F600C4E335 /* MessageType.swift in Sources */,
 				053105952A20DD1F000BCD6F /* Extensions.swift in Sources */,
 				053105B92A20EB6C000BCD6F /* GNutellaBluetoothHost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA4BE2A4283B500C4E335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5072A42A51300C4E335 /* Query.swift in Sources */,
+				057BA50A2A42A62100C4E335 /* List_File.swift in Sources */,
+				057BA4FC2A4284FF00C4E335 /* LocalPeregrineCPPApp.swift in Sources */,
+				057BA5012A42943400C4E335 /* SString+String.swift in Sources */,
+				057BA4FD2A4284FF00C4E335 /* ContentView.swift in Sources */,
+				057BA4D22A42847500C4E335 /* DoCPP.swift in Sources */,
+				057BA4EE2A42847600C4E335 /* Queue.swift in Sources */,
+				057BA4EF2A42847600C4E335 /* Functional.swift in Sources */,
+				057BA4F02A42847600C4E335 /* Message.swift in Sources */,
+				057BA4F12A42847600C4E335 /* MessageType.swift in Sources */,
+				057BA4F22A42847600C4E335 /* Address.swift in Sources */,
+				057BA5042A429DF300C4E335 /* Peer.swift in Sources */,
+				057BA4F32A42847600C4E335 /* GNutellaBluetoothHost.swift in Sources */,
+				057BA4F42A42847600C4E335 /* MessagesInterpreter.swift in Sources */,
+				057BA4F52A42847600C4E335 /* Constants.swift in Sources */,
+				057BA4F62A42847600C4E335 /* Extensions.swift in Sources */,
+				057BA4F72A42847600C4E335 /* L2CapCentralManager.swift in Sources */,
+				057BA4F82A42847600C4E335 /* L2CapConnection.swift in Sources */,
+				057BA4F92A42847600C4E335 /* L2CapPeripheralManager.swift in Sources */,
+				057BA4FA2A42847600C4E335 /* L2Types.swift in Sources */,
+				057BA50C2A42A84800C4E335 /* LinkedList.swift in Sources */,
+				057BA4FB2A42847600C4E335 /* OutputStream+Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +548,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -341,6 +603,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -378,6 +641,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,8 +679,96 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		057BA4CF2A4283B700C4E335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = LocalPeregrineCPP/LocalPeregrineCPP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalPeregrineCPP/Preview Content\"";
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fost.LocalPeregrineCPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		057BA4D02A4283B700C4E335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = LocalPeregrineCPP/LocalPeregrineCPP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalPeregrineCPP/Preview Content\"";
+				DEVELOPMENT_TEAM = K6SG3GJ9A3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fost.LocalPeregrineCPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -437,6 +789,15 @@
 			buildConfigurations = (
 				053105882A20DCC1000BCD6F /* Debug */,
 				053105892A20DCC1000BCD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057BA4CE2A4283B700C4E335 /* Build configuration list for PBXNativeTarget "LocalPeregrineCPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057BA4CF2A4283B700C4E335 /* Debug */,
+				057BA4D02A4283B700C4E335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
